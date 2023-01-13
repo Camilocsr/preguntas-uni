@@ -8,7 +8,10 @@ function App() {
   const [areDisabled, setAreDisabled] = useState (false);
 
   function handleAnswerSubmit(isCorret,e){
-    if(isCorret) setPuntuacion(puntuacon +1);
+    if(isCorret == true) {
+      setPuntuacion(puntuacon +1);
+      console.log(puntuacon)
+    }
     e.target.classList.add(isCorret ? "correct": "incorrect");
     setTimeout(()=>{
       if (preguntaActual == preguntas.length -1){
@@ -16,22 +19,21 @@ function App() {
       } else {
         setPreguntaActual(preguntaActual + 1);
       }
-    },1500);
+    },700);
   }
 
 
-  useEffect(()=>{
-    // let tiempo = 100
-    const intervalo = setInterval(()=>{
+  // useEffect(()=>{
+  //   const intervalo = setInterval(()=>{
 
-      // if(tiempoRestante > 0) setTiempoRestante(()=>tiempo - 1);
-      if(tiempoRestante == 0) setAreDisabled(true);
+  //     if(tiempoRestante > 0) setTiempoRestante((tiempo)=>tiempo - 1);
+  //     if(tiempoRestante == 0) setAreDisabled(true);
 
-      return ()=> clearInterval(intervalo);
+  //     return ()=> clearInterval(intervalo);
 
-    },1000);
+  //   },1000);
 
-  },[tiempoRestante]);
+  // },[tiempoRestante]);
 
 
   if(isFinished) return(
@@ -45,15 +47,15 @@ function App() {
   return (
   <main className="app">
     <div className="lado-izquierdo">
-  <div className="nuero-pregunta">
-    <span>{preguntaActual + 1} de </span>{preguntas.length}
-  </div>
+  {/* <div className="nuero-pregunta">
+    <span>pregunta numero {preguntaActual} de </span>{preguntas.length}
+  </div> */}
   <div className="titulo-pregunta">
     {preguntas[preguntaActual].titulo}
   </div>
-  <div>
+  {/* <div>
     <span className="tiempo-restante">Tiempo restante: {tiempoRestante}</span>
-  </div>
+  </div> */}
     </div>
     <div className="lado-derecho">
       {preguntas[preguntaActual].opciones.map((respuesta)=>(
