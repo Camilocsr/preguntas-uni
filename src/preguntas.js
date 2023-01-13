@@ -25,6 +25,24 @@ const preguntas = [
             {textoRespuesta: "Javascript", isCorret: false},
             {textoRespuesta: "Javascript", isCorret: false}
         ]
+    },
+    {
+        titulo : "¿Qué es una partición?",
+        opciones: [
+            {textoRespuesta: "js", isCorret: false},
+            {textoRespuesta: "Javascript", isCorret: false},
+            {textoRespuesta: "Una partición es una división lógica de un disco duro que es interpretada por el sistema operativo como un disco independiente, cada partición del disco duro puede tener un sistema de archivos, un sistema operativo o sus propios documentos y archivos.", isCorret: true},
+            {textoRespuesta: "Javascript", isCorret: false}
+        ]
+    },
+    {
+        titulo : "¿Existe otro tipo de discos duros?",
+        opciones: [
+            {textoRespuesta: "js", isCorret: false},
+            {textoRespuesta: "Javascript", isCorret: false},
+            {textoRespuesta: "js", isCorret: false},
+            {textoRespuesta: "Aparte de los discos duros también existen otros tipos de unidades de almacenamiento, entre ellos tenemos a los conocidos como discos de estado sólido, que al no contar con discos su nombre correctos es unidades de estado sólido", isCorret: true}
+        ]
     }
 ]
 
