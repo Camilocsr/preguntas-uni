@@ -38,7 +38,7 @@ function App() {
     <main className="app">
       <div className="juego-terminado">
         <span>tubiste {puntuacon} de {preguntas.length}{" "}
-        <button onClick={()=>window.location.href="/"}>Volver a jugar</button></span>
+        <button onClick={()=>window.location.href="index.html"}>Volver a jugar</button></span>
       </div>
     </main>
   )

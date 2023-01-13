@@ -4,7 +4,7 @@ const preguntas = [
         opciones: [
             {textoRespuesta: "Javascript", isCorret: false},
             {textoRespuesta: "perro", isCorret: false},
-            {textoRespuesta: "Es el medio de almacenamiento más importante del ordenador, permite almacenar y recuperar informacion Sirve para leer y escribir información.", isCorret: true},
+            {textoRespuesta: "El disco duro es un dispositivo de memoria secundaria no volátil, es decir, guarda la información, programas, controladores y el sistema operativo del computador", isCorret: true},
             {textoRespuesta: "Javascript", isCorret: false}
         ]
     },
@@ -18,9 +18,9 @@ const preguntas = [
         ]
     },
     {
-        titulo : "¿?",
+        titulo : "¿Qué componentes básicos conforman un Disco Duro?",
         opciones: [
-            {textoRespuesta: "Javascript", isCorret: true},
+            {textoRespuesta: "Un Disco Duro está conformado por varios platos o discos paralelos, cabezales de lectura/escritura, uno en cada lado de cada plato. Todos los cabezales se mueven al mismo tiempo ya que están unidos a un mismo brazo.", isCorret: true},
             {textoRespuesta: "Javascript", isCorret: false},
             {textoRespuesta: "Javascript", isCorret: false},
             {textoRespuesta: "Javascript", isCorret: false}
