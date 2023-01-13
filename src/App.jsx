@@ -45,24 +45,26 @@ function App() {
     </main>
   )
   return (
-  <main className="app">
-    <div className="lado-izquierdo">
-  {/* <div className="nuero-pregunta">
-    <span>pregunta numero {preguntaActual} de </span>{preguntas.length}
-  </div> */}
-  <div className="titulo-pregunta">
-    {preguntas[preguntaActual].titulo}
+  <div className="container-fluid">
+    <main className="app row">
+      <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 lado-izquierdo">
+    {/* <div className="nuero-pregunta">
+      <span>pregunta numero {preguntaActual} de </span>{preguntas.length}
+    </div> */}
+    <div className="titulo-pregunta">
+      {preguntas[preguntaActual].titulo}
+    </div>
+    {/* <div>
+      <span className="tiempo-restante">Tiempo restante: {tiempoRestante}</span>
+    </div> */}
+      </div>
+      <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6lado-derecho">
+        {preguntas[preguntaActual].opciones.map((respuesta)=>(
+          <button disabled={areDisabled} onClick={(e)=>handleAnswerSubmit(respuesta.isCorret,e)} key={respuesta.textoRespuesta}>{respuesta.textoRespuesta}</button>
+        ))}
+      </div>
+    </main>
   </div>
-  {/* <div>
-    <span className="tiempo-restante">Tiempo restante: {tiempoRestante}</span>
-  </div> */}
-    </div>
-    <div className="lado-derecho">
-      {preguntas[preguntaActual].opciones.map((respuesta)=>(
-        <button disabled={areDisabled} onClick={(e)=>handleAnswerSubmit(respuesta.isCorret,e)} key={respuesta.textoRespuesta}>{respuesta.textoRespuesta}</button>
-      ))}
-    </div>
-  </main>
 )
 }
 

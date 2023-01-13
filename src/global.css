@@ -118,3 +118,42 @@
   button svg {
     margin-right: 5px;
   }
+
+  @media (max-width: 988px) {
+    .body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .app{
+      width: 400px;
+      height: 350px;
+      background-color: green;
+    }
+  }
+
+  @media (max-width: 626px) {
+    .body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .app{
+      width: 30%;
+      height: 30%;
+      background-color: green;
+    }
+  }
+
+  @media (max-width: 549px) {
+    .body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .app{
+      width: 10%;
+      height: 10%;
+      background-color: green;
+    }
+  }
